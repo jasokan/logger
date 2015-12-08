@@ -115,11 +115,29 @@
 			<version>1.7.0.RELEASE</version>
 		</dependency>
 
+		<dependency>
+			<groupId>com.speedment</groupId>
+			<artifactId>speedment</artifactId>
+			<version>2.2.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.5.1</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
 		<finalName>driverRewards</finalName>
 		<plugins>
+
+			<plugin>
+				<groupId>com.speedment</groupId>
+				<artifactId>speedment-maven-plugin</artifactId>
+				<version>2.2.0</version>
+			</plugin>
 			<!-- Jetty Dependency -->
 			<plugin>
 				<!-- <groupId>org.mortbay.jetty</groupId> <artifactId>maven-jetty-plugin</artifactId> 
